@@ -1,0 +1,75 @@
+{
+  "name": "use-drag",
+  "version": "0.1.0",
+  "description": "React hook makes a component draggable",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --progress --color",
+    "build": "webpack --env build",
+    "example": "webpack --env example",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShizukuIchi/use-drag.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "drag"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShizukuIchi/use-drag/issues"
+  },
+  "homepage": "https://github.com/ShizukuIchi/use-drag#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.2.0",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "regenerator-runtime": "^0.13.1",
+    "use-hooks-readme": "^1.0.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{js,jsx,json}": [
+      "use-hooks-readme",
+      "git add README.md"
+    ]
+  },
+  "dependencies": {
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2"
+  },
+  "peerDependencies": {
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2"
+  }
+}
