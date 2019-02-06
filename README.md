@@ -2,6 +2,12 @@
 
 React hook makes a component draggable.
 
+## Install
+
+```
+yarn add use-drag
+```
+
 ## Usage
 
 ```jsx

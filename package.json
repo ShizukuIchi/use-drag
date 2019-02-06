@@ -1,6 +1,6 @@
 {
   "name": "use-drag",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React hook makes a component draggable",
   "main": "dist/index.js",
   "files": [
@@ -10,7 +10,6 @@
     "test": "jest",
     "start": "webpack-dev-server --progress --color",
     "build": "webpack --env build",
-    "example": "webpack --env example",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -63,10 +62,6 @@
       "use-hooks-readme",
       "git add README.md"
     ]
-  },
-  "dependencies": {
-    "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2"
   },
   "peerDependencies": {
     "react": "16.7.0-alpha.2",
